@@ -1,0 +1,92 @@
+<html ng-app="UAPython">
+<head>
+   <title>File Uploading Form</title>
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+   <!--Let browser know website is optimized for mobile-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        }
+        #actual_text{
+
+            line-height: 1em;
+            min-height:100px;
+            max-height:300px;
+            overflow: scroll;
+            border:1px solid black;
+        }
+        #actual_text pre{
+           overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+// file list(resourcelist)
+// file content
+// command
+// expected output
+// actual output
+// diff part
+
+<div ng-controller="IDEcontroller as IDE" >
+
+    <div class="row">
+        <div id="filetree" class="blue lighten-4 col s2" ng-click="getfiletree()">resource file tree
+            <div ng-repeat="file in filetree track by $index">{{file}}</div>
+        </div>
+        <div id="content" class="indigo lighten-3 col s4">file content </div>
+        <div class="lime lighten-4 col s6">command
+            <textarea id="cmd_text"></textarea>
+            <div id="runcmd" class="waves-effect waves-light btn ">run</div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="blue lighten-4 col s12">excepted output
+            <textarea></textarea>
+        </div>
+
+
+
+        <div class="indigo lighten-3 col s12">actual output
+            <div id="clean_actual" class="clean waves-effect waves-light btn">clean</div>
+            <div id="actual_text"></div>
+        </div>
+        <div class="lime lighten-4 col s12">diff
+            <textarea></textarea>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+</body>
+<script type="text/javascript" src="res/main.js" ></script>
+</html>

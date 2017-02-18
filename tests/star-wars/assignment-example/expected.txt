@@ -1,0 +1,29 @@
+
+*** A large, multiple-eyed Creature gives Luke a rough shove.  ***
+
+CREATURE: Negola dewaghi wooldugger?!?
+
+*** The hideous freak is obviously drunk. Luke tries to ignore ***
+*** the creature and turns back on his drink. A short, grubby  ***
+*** Human and an even smaller rodent-like beast join the       ***
+*** belligerent monstrosity.                                   ***
+
+HUMAN: He doesn't like you.
+
+LUKE: I'm sorry.
+
+HUMAN: I don't like you either.
+
+*** The big creature is getting agitated and yells out some    ***
+*** unintelligible gibberish at the now rather nervous, young  ***
+*** adventurer.                                                ***
+
+HUMAN: Don't insult us.
+You just watch yourself. 
+We're wanted men.
+I have the death sentence in twelve systems.
+
+LUKE: I'll be careful then.
+
+HUMAN: You'll be dead!
+

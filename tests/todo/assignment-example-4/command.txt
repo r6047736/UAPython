@@ -1,0 +1,13 @@
+bash COMMAND_BASE_DIR/todo.sh list
+
+echo "---"
+
+bash COMMAND_BASE_DIR/todo.sh clear
+
+bash COMMAND_BASE_DIR/todo.sh list
+
+rm todo.txt
+echo "Feed the dog"  >> todo.txt
+echo "Feed the fish" >> todo.txt
+echo "Feed the cat"  >> todo.txt
+

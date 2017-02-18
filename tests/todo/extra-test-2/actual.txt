@@ -1,0 +1,77 @@
+"---"
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* bash COMMAND_BASE_DIR/todo.sh add "GGG"
+* bash COMMAND_BASE_DIR/todo.sh add "HHH"
+* bash COMMAND_BASE_DIR/todo.sh add "III"
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* bash COMMAND_BASE_DIR/todo.sh remove 2
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* bash COMMAND_BASE_DIR/todo.sh clear
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* rm todo.txt
+* touch todo.txt
+* 
+Todo entry '"AAA"' added.
+Todo entry '"BBB"' added.
+Todo entry '"CCC"' added.
+Todo entry '"DDD"' added.
+Todo entry '"EEE"' added.
+Todo entry '"FFF"' added.
+"---"
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* bash COMMAND_BASE_DIR/todo.sh add "GGG"
+* bash COMMAND_BASE_DIR/todo.sh add "HHH"
+* bash COMMAND_BASE_DIR/todo.sh add "III"
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* bash COMMAND_BASE_DIR/todo.sh remove 2
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* bash COMMAND_BASE_DIR/todo.sh clear
+* 
+* echo "---"
+* bash COMMAND_BASE_DIR/todo.sh list
+* 
+* rm todo.txt
+* touch todo.txt
+* 
+* "AAA"
+* "BBB"
+* "CCC"
+* "DDD"
+* "EEE"
+* "FFF"
+All todo entries cleared.
+"---"
+Todo entry '"GGG"' added.
+Todo entry '"HHH"' added.
+Todo entry '"III"' added.
+"---"
+* "GGG"
+* "HHH"
+* "III"
+Todo entry 2 removed.
+"---"
+* "GGG"
+* "III"
+All todo entries cleared.
+"---"

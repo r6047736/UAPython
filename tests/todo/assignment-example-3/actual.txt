@@ -1,0 +1,8 @@
+The todo-list database file is missing!
+"---"
+The todo-list database file is missing!
+The todo-list database file is missing!
+"Check the mail" >> todo.txt
+"Finish assignment 3" >> todo.txt
+"Be awesome" >> todo.txt
+"Take out the trash" >> todo.txt

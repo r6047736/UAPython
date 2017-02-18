@@ -1,0 +1,5 @@
+* Feed the dog
+* Feed the fish
+* Feed the cat
+---
+All todo entries cleared.
