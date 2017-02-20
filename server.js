@@ -37,15 +37,18 @@ app.get('/listUsers', function (req, res) {
 
 
 
-app.get('readfile/:fileName',function(req,res){
+app.get('/readfile/:fileName',function(req,res){
     var filename = req.params.fileName;
-    fs.readFile(file);
+
 
     fs.readFile( BASEDIR+"/"+filename,'utf8', function(err, data){
+
         if (err)
             res.send(JSON.stringify(err));
         else
             res.send(JSON.stringify(data));
+        console.log(data || err);
+
     });
 
 })
@@ -58,7 +61,7 @@ app.get('/runcmd/:cmd',function(req,res){
 });
 
 app.get('/current', function (req, res) {
-
+/*
     fs.readdir(__dirname, function(err, items) {
         console.log(items);
 
@@ -66,17 +69,18 @@ app.get('/current', function (req, res) {
             console.log(items[i]);
         }
     });
+    */
 
     exec("ls "+__dirname, function(err,stdout,stderr){
         if(err) {
-            console.log(colors.blue(err));
+          //  console.log(colors.blue(err));
         }
         else if(stderr){
-            console.log(colors.red('stderr',stderr));
+           // console.log(colors.red('stderr',stderr));
         }
         else {
             //   var data = JSON.parse(stdout);
-            console.log(colors.green(stdout));
+          //  console.log(colors.green(stdout));
         }
         res.send( JSON.stringify(stderr || err || stdout) );
     });

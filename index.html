@@ -37,6 +37,27 @@
         #actual_text pre{
            overflow: auto;
         }
+
+        #filetree   .chip{
+            border:1px solid red;
+            float:none;
+            display: block;
+        }
+        #sources,
+        #filetree,
+        #content{
+            border:1px solid red;
+            height:300px;
+
+        }
+        #filetree, #content{
+            overflow: scroll;
+        }
+        #content textarea{
+            height:100%;
+            background: white;
+        }
+
     </style>
 </head>
 
@@ -51,11 +72,17 @@
 
 <div ng-controller="IDEcontroller as IDE" >
 
-    <div class="row">
+    <div class="row"  id="sources" >
         <div id="filetree" class="blue lighten-4 col s2" ng-click="getfiletree()">resource file tree
-            <div ng-repeat="file in filetree track by $index">{{file}}</div>
+            <div ng-repeat="file in filetree track by $index" ng-click="getfileOrDir(file)" class="chip">{{file}}</div>
+
+
         </div>
-        <div id="content" class="indigo lighten-3 col s4">file content </div>
+        <div id="content" class="indigo lighten-3 col s4">file content
+            <textarea>
+
+            </textarea>
+        </div>
         <div class="lime lighten-4 col s6">command
             <textarea id="cmd_text"></textarea>
             <div id="runcmd" class="waves-effect waves-light btn ">run</div>

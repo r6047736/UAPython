@@ -28,23 +28,22 @@ angular.module('UAPython', [])
 
         $scope.getfiletree = function(){
             $.get(SERVER+'/current', function(data){
-                    // $("#filetree").html("<pre>"+JSON.parse(data)+"</pre>"  );
-
                     $scope.filetree = JSON.parse(data).split("\n");
                     $scope.$apply();
                 });
-
+        }
+        $scope.getfileOrDir=function(filename){
+                $.get(SERVER+'/readfile/'+filename, function(data){
+                    $('#content textarea').html(JSON.parse(data));
+                    //alert(data)
+                });
 
 
         }
 
 
 
-        var readfile = function(filename){
-            $.get(SERVER+'/readfile/'+filename, function(data){
-                $('#content').val(JSON.parse(data));
-            });
-        }
+
 
 
 
