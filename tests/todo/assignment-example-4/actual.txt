@@ -1,7 +1,0 @@
-The todo-list database file is missing!
-"---"
-The todo-list database file is missing!
-The todo-list database file is missing!
-"Feed the dog" >> todo.txt
-"Feed the fish" >> todo.txt
-"Feed the cat" >> todo.txt

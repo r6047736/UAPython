@@ -1,0 +1,13 @@
+Assignment-5
+Grader: Haodong Ruan
+Author: Graham Smith
+
+Q1: 
+
+PUTER: I am a computer program, so obiously I am excellent!
+obiously spell incorrectly.    -2
+
+comment looks nice
+
+Total 98
+

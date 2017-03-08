@@ -1,0 +1,102 @@
+GAME: Welcome to HANGMAN!
+GAME: player 1 Enter a hangman word:
+GAME: Current hangman status:
+
+_______
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+y______
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+yo_____
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+you_u__
+GAME: player 2 guess a letter:
+GAME: NOPE!
+GAME: Current hangman status:
+  _
+ |_|
+
+you_u__
+GAME: player 2 guess a letter:
+GAME: NOPE!
+GAME: Current hangman status:
+  _
+ |_|
+  |
+  |
+
+you_u__
+GAME: player 2 guess a letter:
+GAME: NOPE!
+GAME: Current hangman status:
+  _
+ |_|
+--|
+  |
+
+you_u__
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+  _
+ |_|
+--|
+  |
+
+you_ub_
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+  _
+ |_|
+--|
+  |
+
+you_ub_
+GAME: player 2 guess a letter:
+GAME: NOPE!
+GAME: Current hangman status:
+  _
+ |_|
+--|--
+  |
+
+you_ub_
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+  _
+ |_|
+--|--
+  |
+
+youtub_
+GAME: player 2 guess a letter:
+GAME: NOPE!
+GAME: Current hangman status:
+  _
+ |_|
+--|--
+  |
+ / 
+
+youtub_
+GAME: player 2 guess a letter:
+GAME: NOPE!
+GAME: Current hangman status:
+  _
+ |_|
+--|--
+  |
+ / \ 
+
+youtub_
+GAME: player 1 wins!

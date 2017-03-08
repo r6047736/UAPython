@@ -1,0 +1,21 @@
+GAME: Welcome to HANGMAN!
+GAME: player 1 Enter a hangman word:
+GAME: Current hangman status:
+
+___
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+a__
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+an_
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+ant
+GAME: player 2 wins!

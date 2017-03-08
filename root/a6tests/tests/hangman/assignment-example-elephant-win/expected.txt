@@ -1,0 +1,56 @@
+GAME: Welcome to HANGMAN!
+GAME: player 1 Enter a hangman word:
+GAME: Current hangman status:
+
+________
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+e_e_____
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+e_ep____
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+
+elep____
+GAME: player 2 guess a letter:
+GAME: NOPE!
+GAME: Current hangman status:
+  _
+ |_|
+
+elep____
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+  _
+ |_|
+
+eleph___
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+  _
+ |_|
+
+elepha__
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+  _
+ |_|
+
+elepha_t
+GAME: player 2 guess a letter:
+GAME: YES!
+GAME: Current hangman status:
+  _
+ |_|
+
+elephant
+GAME: player 2 wins!

@@ -1,0 +1,7 @@
+ant
+x
+a
+b
+n
+r
+t

@@ -1,0 +1,9 @@
+PUTER: Hello and welcome! Ask me no more than 10 questions.
+PUTER: Go ahead, ask me something:
+PUTER: The current date/time is 2017-02-27 08:05:57.482554
+PUTER: Go ahead, ask me something:
+PUTER: red!
+PUTER: Go ahead, ask me something:
+PUTER: Sorry, I can't understand you!
+PUTER: Go ahead, ask me something:
+PUTER: Bye!

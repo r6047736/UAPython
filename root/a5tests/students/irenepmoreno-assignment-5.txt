@@ -1,0 +1,14 @@
+Assignment-5
+Grader: Haodong Ruan
+Author: Irene Moreno
+
+Q1: 
+you wrote 
+PUTER: Go ahead, ask me something:
+to
+Puter: Go ahead, ask me something:          -3
+
+comment is limited plus your variable name is not clear. -3
+
+Total: 94
+

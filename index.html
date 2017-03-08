@@ -13,49 +13,21 @@
    <!--Let browser know website is optimized for mobile-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
 
-        ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-        }
-        #actual_text{
-
-            line-height: 1em;
-            min-height:100px;
-            max-height:300px;
-            overflow: scroll;
-            border:1px solid black;
-        }
-        #actual_text pre{
-           overflow: auto;
-        }
-
-        #filetree   .chip{
-            border:1px solid red;
-            float:none;
+        #uploadfileLb{
             display: block;
-        }
-        #sources,
-        #filetree,
-        #content{
-            border:1px solid red;
-            height:300px;
+            height:100px;
+            width:100px;
+
 
         }
-        #filetree, #content{
-            overflow: scroll;
-        }
-        #content textarea{
+        #uploadfileLb img{
+            width: 100%;
             height:100%;
-            background: white;
+
+        }
+        select{
+            display: block !important;
         }
 
     </style>
@@ -63,50 +35,75 @@
 
 <body>
 
-// file list(resourcelist)
-// file content
-// command
-// expected output
-// actual output
-// diff part
 
 <div ng-controller="IDEcontroller as IDE" >
 
-    <div class="row"  id="sources" >
-        <div id="filetree" class="blue lighten-4 col s2" ng-click="getfiletree()">resource file tree
-            <div ng-repeat="file in filetree track by $index" ng-click="getfileOrDir(file)" class="chip">{{file}}</div>
 
-
-        </div>
-        <div id="content" class="indigo lighten-3 col s4">file content
-            <textarea>
-
-            </textarea>
-        </div>
-        <div class="lime lighten-4 col s6">command
-            <textarea id="cmd_text"></textarea>
-            <div id="runcmd" class="waves-effect waves-light btn ">run</div>
-        </div>
-
-    </div>
 
     <div class="row">
-        <div class="blue lighten-4 col s12">excepted output
-            <textarea></textarea>
+
+        <div class="col s4">
+
+            <p> 1st, upload all of py scripts </p>
+
+
+
+            <form id        =  "uploadForm"
+                  enctype   =  "multipart/form-data"
+                  action    =  "http://127.0.0.1:8081/upload"
+                  method    =  "post">
+
+                <label for="fileupload" id="uploadfileLb"><img src="res/upload-icon.png"></label>
+                <input id="fileupload" type="file" name="pyfiles"    />
+                <input type="text" name="dir" id="savedir" ng-model="randomDirectory" hidden />
+                <input type="text" name="num" id="assgignId"  ng-model="assignId.id" hidden/>
+
+                <div class="input-field col s12">
+                    2nd. Select your Assignment number   (Dont refresh page, otherwaise you need reupload files)
+                    <select ng-model="assignId" ng-options="a.name for a in assigmentList">
+
+                    </select>
+
+                </div>
+
+
+
+
+                <button type="submit" class="waves-effect waves-light btn">
+                    Upload file
+                </button>
+                <a class="waves-effect waves-light btn" ng-click="readdir()" > Refresh Directory</a>
+
+
+            </form>
+            <div>
+                <p>You have those files in the current cloud.</p>
+
+                <div class="chip" ng-repeat=" a in currentUploadedFiles">
+                    {{a}}
+
+                </div>
+
+            </div>
+            When you are ready to test, You can click to run
+
+            <a class="waves-effect waves-light btn" id="test" > Run Test</a>
+
+
         </div>
 
 
-
-        <div class="indigo lighten-3 col s12">actual output
+        <div class="indigo lighten-3 col s8">actual output
             <div id="clean_actual" class="clean waves-effect waves-light btn">clean</div>
             <div id="actual_text"></div>
         </div>
-        <div class="lime lighten-4 col s12">diff
-            <textarea></textarea>
-        </div>
+
 
 
     </div>
+
+
+
 
 
 </div>
@@ -115,5 +112,8 @@
 
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+
 <script type="text/javascript" src="res/main.js" ></script>
 </html>

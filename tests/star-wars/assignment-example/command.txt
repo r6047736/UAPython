@@ -1,1 +1,0 @@
-python3.6 COMMAND_BASE_DIR/star-wars.py

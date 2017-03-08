@@ -1,0 +1,1 @@
+cat script.txt | python3 COMMAND_BASE_DIR/puter-1.py

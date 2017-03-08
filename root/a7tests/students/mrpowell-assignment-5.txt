@@ -1,0 +1,17 @@
+Assignment-5
+Grader: Haodong Ruan
+Author: Marshal Powell
+
+Q1: 
+
+“PUTER: I'm always good because I am a computer!”  should be      - 8
+“PUTER: I am a computer program, so obviously I am excellent!” How can you make up those words > <
+
+After correct the right string, you still failed the tests on datatime part.   -12
+
+
+
+
+comment is fine
+
+Total :80

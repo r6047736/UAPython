@@ -1,8 +1,30 @@
 var express = require('express');
+var md5 = require('md5');
 var app = express();
 var fs = require("fs");
 var exec = require('child_process').exec;
-var colors = require('colors/safe');
+var spawn= require('child_process').spawn;
+var multer = require('multer');
+var storage = multer.diskStorage({
+    destination: function(req,file,callback){
+
+        callback(null,'./uploads');
+    },
+    filename:function(req,file,callback){
+
+
+        callback(null, file.originalname + new Date());
+    }
+})
+var upload = multer({storage:storage}).single('pyfiles');
+
+var assigns = [
+    {name:"a5", id:"a5",num:"5"},
+    {name:"a6", id:"a6",num:"6"},
+    {name:"a7", id:"a7",num:"7"}];
+
+
+
 var BASEDIR = __dirname;
 
 app.use(function (req, res, next) {
@@ -26,94 +48,113 @@ app.use(function (req, res, next) {
 
 
 
+app.get('/assignList',function(req,res){
+    res.send(assigns);
 
-app.get('/listUsers', function (req, res) {
-    fs.readFile( __dirname + "/" + "user.json", 'utf8', function (err, data) {
-        console.log( data );
-        res.end( data );
-    });
+
 })
 
 
 
 
-app.get('/readfile/:fileName',function(req,res){
-    var filename = req.params.fileName;
+app.post('/upload',function(req,res){
 
 
-    fs.readFile( BASEDIR+"/"+filename,'utf8', function(err, data){
 
+
+    upload(req,res,function(err){
         if (err)
-            res.send(JSON.stringify(err));
-        else
-            res.send(JSON.stringify(data));
-        console.log(data || err);
+            return res.end("error uploading file")
 
-    });
+
+        var dir = 'root/'+req.body.num+"tests/uploads/"+ req.body.dir;
+
+        if (!fs.existsSync(dir)){
+            fs.mkdirSync(dir);
+        }
+
+        if (!req.file || !req.body.num ){
+            //   console.log("No file")
+           // res.send("No file uploaded")
+            return;
+        }
+
+        movefile(req.file.path,dir+"/"+ req.file.originalname);
+
+
+
+    })
 
 })
 
-app.get('/runcmd/:cmd',function(req,res){
-    var cmd = req.params.cmd;
-    console.log(" your enter a command ", cmd);
 
-    runcomd(cmd,res);
-});
+app.get('/getfiles',function(req,res){
+    var dir = req.query.studentDir;
+    var assignId = req.query.assigId;
 
-app.get('/current', function (req, res) {
-/*
-    fs.readdir(__dirname, function(err, items) {
-        console.log(items);
 
-        for (var i=0; i<items.length; i++) {
-            console.log(items[i]);
+    fs. readdir("root/"+assignId+"tests/uploads/"+dir , function(err, items) {
+        if (err){
+            console.log(err);
         }
-    });
-    */
+        console.log(items)
+        res.send(items);
 
-    exec("ls "+__dirname, function(err,stdout,stderr){
-        if(err) {
-          //  console.log(colors.blue(err));
-        }
-        else if(stderr){
-           // console.log(colors.red('stderr',stderr));
-        }
-        else {
-            //   var data = JSON.parse(stdout);
-          //  console.log(colors.green(stdout));
-        }
-        res.send( JSON.stringify(stderr || err || stdout) );
-    });
 
+    })
 
 
 })
 
 
-var runcomd = function(command,res){
 
+function movefile (tmpDir, finalDir){
+    var source = fs.createReadStream(tmpDir);
+    var dest = fs.createWriteStream(finalDir);
 
+    source.pipe(dest);
+    source.on('end', function() {
+        fs.unlink(tmpDir);
 
-
-    exec(command, function(err,stdout,stderr){
-        if(err) {
-            console.log(colors.blue(err));
-        }
-        else if(stderr){
-            console.log(colors.red('stderr',stderr));
-        }
-        else {
-
-            //   var data = JSON.parse(stdout);
-            console.log(colors.green(stdout));
-        }
-        res.send( JSON.stringify(stderr || err || stdout) );
     });
-
+    source.on('error', function(err) { /* error */ });
 }
 
 
+app.get('/test/',function(req,res){
+    var asId = req.query.assigNum;
+    var studentworkingDir = req.query.currentDir ;
+    var assignmentworkingDir;
 
+    console.log(req.query);
+
+    var re ="";
+
+    deploySh  =spawn("bash",['test-all.sh','../tatt/','../uploads/'+studentworkingDir],{
+        cwd: BASEDIR +'/root/'+asId+'tests/tests'
+    })
+
+
+    deploySh.stdout.on('data', function(data){
+        console.log(data);
+        re += data;
+    });
+
+    deploySh.stderr.on('data', function(data) {
+        console.log(data);
+        re += data;
+    });
+    deploySh.on('close', function(code) {
+        if (code !== 0) {
+
+            res.send(JSON.stringify(re));
+        }
+
+    });
+
+
+
+})
 
 
 var server = app.listen(8081,'localhost', function () {

@@ -1,0 +1,22 @@
+PUTER: Hello and welcome! Ask me no more than 10 questions.
+PUTER: Go ahead, ask me something:
+PUTER: red!
+PUTER: Go ahead, ask me something:
+PUTER: blue!
+PUTER: Go ahead, ask me something:
+PUTER: green!
+PUTER: Go ahead, ask me something:
+PUTER: red!
+PUTER: Go ahead, ask me something:
+PUTER: blue!
+PUTER: Go ahead, ask me something:
+PUTER: green!
+PUTER: Go ahead, ask me something:
+PUTER: red!
+PUTER: Go ahead, ask me something:
+PUTER: blue!
+PUTER: Go ahead, ask me something:
+PUTER: green!
+PUTER: Go ahead, ask me something:
+PUTER: red!
+PUTER: Question limit reached. Bye!

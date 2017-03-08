@@ -1,0 +1,23 @@
+Assignment-5
+Grader: Haodong Ruan
+Author: Alex Romero
+
+Q1: 
+
+ color_count == 10):
+            print ("red!")
+            color_count = color_count + 1
+        elif (color_count == 2 or color_count == 5 or color_count == 8):
+            print("blue!")
+            color_count = color_count + 1
+        elif (color_count == 3 or color_count == 6 or color_count == 9):
+            print("green!")
+
+
+You should print “PUTER: ” first   -5
+
+comment is fine
+
+
+
+Total: 95

@@ -1,3 +1,0 @@
-bash COMMAND_BASE_DIR/todo.sh add "Take\ out\ the\ trash"
-bash COMMAND_BASE_DIR/todo.sh list
-sed -i '' "4d" todo.txt

@@ -1,0 +1,12 @@
+what is your favorite color?
+how are you?
+how are you?
+what is your favorite color?
+how are you?
+what is your favorite color?
+This is not a valid question?
+what is your favorite color?
+what is your favorite color?
+Statement
+exit
+
