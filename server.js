@@ -174,5 +174,10 @@ var server = app.listen(8081,'localhost', function () {
 
     console.log("Example app listening at http://%s:%s", host, port)
 
+    if (!fs.existsSync("uploads/")){
+        fs.mkdirSync("uploads/");
+    }
+
+
 })
 
