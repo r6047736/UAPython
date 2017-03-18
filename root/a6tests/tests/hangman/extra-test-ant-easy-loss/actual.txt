@@ -44,7 +44,7 @@ GAME: Current hangman status:
  |_|
 --|--
   |
- / 
+ /
 
 ___
 GAME: player 2 guess a letter:
@@ -54,7 +54,7 @@ GAME: Current hangman status:
  |_|
 --|--
   |
- / \ 
+ / \
 
 ___
 GAME: player 1 wins!

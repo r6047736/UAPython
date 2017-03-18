@@ -1,5 +1,5 @@
 var express = require('express');
-var md5 = require('md5');
+
 var app = express();
 var fs = require("fs");
 var exec = require('child_process').exec;
@@ -59,12 +59,15 @@ app.get('/assignList',function(req,res){
 
 app.post('/upload',function(req,res){
 
-
+console.log("request")
 
 
     upload(req,res,function(err){
-        if (err)
+        if (err){
+            console.log(err);
             return res.end("error uploading file")
+        }
+
 
 
         var dir = 'root/'+req.body.num+"tests/uploads/"+ req.body.dir;
@@ -74,11 +77,11 @@ app.post('/upload',function(req,res){
         }
 
         if (!req.file || !req.body.num ){
-            //   console.log("No file")
-           // res.send("No file uploaded")
+               console.log("No file")
+            //res.send("No file uploaded")
             return;
         }
-
+console.log(req.body)
         movefile(req.file.path,dir+"/"+ req.file.originalname);
 
 
@@ -91,11 +94,18 @@ app.post('/upload',function(req,res){
 app.get('/getfiles',function(req,res){
     var dir = req.query.studentDir;
     var assignId = req.query.assigId;
-
+    if (!assignId)
+        return;
 
     fs. readdir("root/"+assignId+"tests/uploads/"+dir , function(err, items) {
+
+        if (!fs.existsSync("root/"+assignId+"tests/uploads/"+dir)){
+            fs.mkdirSync("root/"+assignId+"tests/uploads/"+dir);
+        }
+
         if (err){
             console.log(err);
+
         }
         console.log(items)
         res.send(items);

@@ -3,6 +3,7 @@ var SERVER = "http://127.0.0.1:8081";
 var currentPath = "/";
 var filetreePointer = null;
 
+
 //$("#savedir").val(randomDirectory);
 //alert(randomDirectory);
 
@@ -33,6 +34,12 @@ angular.module('UAPython', [])
                 }
             )
         })
+
+        $("#fileupload").on('change',function(){
+
+            $("#submitButton").html(this.files[0].name)
+
+        });
 
 
 

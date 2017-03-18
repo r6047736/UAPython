@@ -86,7 +86,7 @@ GAME: Current hangman status:
  |_|
 --|--
   |
- / 
+ /
 
 youtub_
 GAME: player 2 guess a letter:
@@ -96,7 +96,7 @@ GAME: Current hangman status:
  |_|
 --|--
   |
- / \ 
+ / \
 
 youtub_
 GAME: player 1 wins!

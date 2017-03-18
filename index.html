@@ -13,7 +13,87 @@
    <!--Let browser know website is optimized for mobile-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
+        .steps{
+            width:70%;
+            min-width:500px;
+            margin: 0 auto;
 
+        }
+        .step-cell select{
+            border:none;
+        }
+        .step-cell label.title{
+           // color: #FF5A5F;
+            display: block;
+
+
+            padding-left: 9px;
+            padding-top:10px;
+            font-size: 0.9em;
+        }
+
+        #submitButton,
+        #upload,
+        #clean_actual{
+            margin-top:5px;
+            margin-left:10px; ;
+            display:block;
+            background:#FF5A5F;
+            width:200px;
+            text-align: center;
+            padding:10px;
+            color:white;
+            overflow: hidden;
+        }
+        #upload{
+            border:none;
+            background: #ff486a;
+            margin-top:20px;
+            width:150px;
+        }
+        #submitButton:hover,
+        #upload:hover,
+        #test:hover,
+        #clean_actual:hover{
+            border:none;
+            background: #f7fff6;
+            color:#FF5A5F;
+            transition: 0.2s background ease-in;
+            cursor:pointer;
+        }
+        .steps_form{
+            width:100%;
+            border:1px solid black;
+            border-radius: 5px;
+            padding:10px;
+
+
+            display: flex;
+            flex-direction: row;
+        }
+        .step-cell{
+    width:30%;
+        }
+
+        .step_assID{
+            width:50%;
+            padding-right:50px;
+
+        }
+        .step_assSubmit{
+            width:50%;
+
+        }
+        .banner{
+            padding-top:100px;
+           // background: rgba(90, 87, 255, 0.28);
+            font-size:4em;:
+
+        }
+    body{
+        //font-family: GillSans, Calibri, Trebuchet, sans-serif;
+        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    }
         #uploadfileLb{
             display: block;
             height:100px;
@@ -30,6 +110,44 @@
             display: block !important;
         }
 
+        .fileconsole{
+            padding:20px;
+           margin-top: 20px;
+            border:1px solid black;
+            min-height:80px;
+
+
+
+
+        }
+        .fileconsole  .filelist{
+            margin-top: 5px;
+            min-height:2em;
+            padding:5px;
+            background: rgba(29, 20, 20, 0.15);
+
+        }
+        #test{
+            margin-top:20px;
+            margin-left:10px; ;
+            display:block;
+            background: #89ff74;
+
+            text-align: center;
+            padding:10px;
+            color:white;
+            overflow: hidden;
+
+        }
+        #actual_text{
+            padding: 10px;
+            margin:10px 0 10px 0;
+            min-height:100px;
+            border:1px solid black;
+            border-radius: 15px;
+        }
+
+
     </style>
 </head>
 
@@ -38,69 +156,80 @@
 
 <div ng-controller="IDEcontroller as IDE" >
 
+    <div  class="row banner">
+        CSC 250 online tester
 
-
-    <div class="row">
-
-        <div class="col s4">
-
-            <p> 1st, upload all of py scripts </p>
+    </div>
 
 
 
+    <div  class="steps">
+
+
+
+        <div class="col ">
             <form id        =  "uploadForm"
                   enctype   =  "multipart/form-data"
                   action    =  "http://127.0.0.1:8081/upload"
-                  method    =  "post">
+                  method    =  "post" >
+            <div class="steps_form">
 
-                <label for="fileupload" id="uploadfileLb"><img src="res/upload-icon.png"></label>
-                <input id="fileupload" type="file" name="pyfiles"    />
-                <input type="text" name="dir" id="savedir" ng-model="randomDirectory" hidden />
-                <input type="text" name="num" id="assgignId"  ng-model="assignId.id" hidden/>
-
-                <div class="input-field col s12">
-                    2nd. Select your Assignment number   (Dont refresh page, otherwaise you need reupload files)
-                    <select ng-model="assignId" ng-options="a.name for a in assigmentList">
-
-                    </select>
-
+               <div class="step-cell step_assID">
+                  <label class="title">1. Select an assignment number </label>
+                   <select ng-model="assignId" ng-options="a.name for a in assigmentList" >
+                       <option value="" disabled selected hidden> Click here</option>
+                   </select>
+               </div>
+                <div class="step-cell  step_assSubmit">
+    <label class="title">2.Upload all of scripts individually</label>
+                    <input id="fileupload" type="file" name="pyfiles"  hidden  />
+                    <label for="fileupload"  id="submitButton" >Choose File</label>
+                    <input type="text" name="dir" id="savedir" ng-model="randomDirectory" hidden />
+                    <input type="text" name="num" id="assgignId"  ng-model="assignId.id" hidden/>
+                </div>
+                <div class="step-cell   ">
+                    <button type="submit" class=""  id="upload" >Upload</button>
                 </div>
 
-
-
-
-                <button type="submit" class="waves-effect waves-light btn">
-                    Upload file
-                </button>
-                <a class="waves-effect waves-light btn" ng-click="readdir()" > Refresh Directory</a>
-
-
-            </form>
-            <div>
-                <p>You have those files in the current cloud.</p>
-
-                <div class="chip" ng-repeat=" a in currentUploadedFiles">
-                    {{a}}
-
-                </div>
 
             </div>
-            When you are ready to test, You can click to run
+            </form>
+            <div class="fileconsole row">
 
-            <a class="waves-effect waves-light btn" id="test" > Run Test</a>
+
+                <div class="col s10">Uploaded Files
+                    <div class="filelist">
+                        <div class="chip" ng-repeat=" a in currentUploadedFiles">
+                            {{a}}
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col s2">
+
+                    <label class=""  id="test" >Run</label>
+
+                </div>
 
 
+            </div>
+
+            <div class="output">
+                <div id="clean_actual" class="">Clean console </div>
+                <div id="actual_text"></div>
+            </div>
         </div>
 
-
-        <div class="indigo lighten-3 col s8">actual output
-            <div id="clean_actual" class="clean waves-effect waves-light btn">clean</div>
-            <div id="actual_text"></div>
-        </div>
 
 
 
     </div>
+
+
+
+
+
 
 
 
