@@ -1,9 +1,0 @@
-Assignment-5
-Grader: Haodong Ruan
-Author: Alex Romero
-
-Q1: pass all 
-
-comment is fine
-
-Total:100
