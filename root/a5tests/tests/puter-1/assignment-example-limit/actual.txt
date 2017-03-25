@@ -1,6 +1,6 @@
 PUTER: Hello and welcome! Ask me no more than 10 questions.
 PUTER: Go ahead, ask me something:
-PUTER: The current date/time is 2017-03-07 15:03:46.735060
+PUTER: The current date/time is 2017-03-23 14:14:57.228899
 PUTER: Go ahead, ask me something:
 PUTER: red!
 PUTER: Go ahead, ask me something:
@@ -18,5 +18,5 @@ PUTER: blue!
 PUTER: Go ahead, ask me something:
 PUTER: green!
 PUTER: Go ahead, ask me something:
-Sorry, I can't understand you!
+PUTER: Sorry, I can't understand you!
 PUTER: Question limit reached. Bye!

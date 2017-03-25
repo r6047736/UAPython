@@ -28,7 +28,7 @@ angular.module('UAPython', [])
         $('#test').on('click',function(){
 
             $.get(SERVER+'/test', { currentDir:  $scope.randomDirectory , assigNum: $scope.assignId.id },function(data){
-
+                    stupidParser().readString(data);
                     $("#actual_text").html("<pre>"+JSON.parse(data)+"</pre>" + $("#actual_text").html() );
 
                 }
@@ -98,6 +98,17 @@ angular.module('UAPython', [])
 
 
     });
+
+
+var stupidParser=function(){
+        this.readString =function(testStr){
+
+
+            var a =testStr.split("\n")
+            console.log(a);
+        }
+
+}
 
 
 

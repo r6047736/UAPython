@@ -1,0 +1,8 @@
+PUTER: Hello and welcome! Let's talk...
+PUTER: OK, got it.
+PUTER: Your favorite my favorite is .
+PUTER: OK, got it.
+PUTER: Not sure :-(
+PUTER: Your favorite food? is banana.
+PUTER: Personal info saved!
+PUTER: Bye!

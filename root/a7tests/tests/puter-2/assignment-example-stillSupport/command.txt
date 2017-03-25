@@ -1,0 +1,3 @@
+rm -f favorites.txt
+touch favorites.txt
+cat script.txt | python3 COMMAND_BASE_DIR/puter-2.py

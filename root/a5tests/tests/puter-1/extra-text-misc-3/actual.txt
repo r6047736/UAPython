@@ -18,5 +18,5 @@ PUTER: red!
 PUTER: Go ahead, ask me something:
 PUTER: I am a computer program! I don't have a birthday :-(
 PUTER: Go ahead, ask me something:
-Sorry, I can't understand you!
+PUTER: Sorry, I can't understand you!
 PUTER: Question limit reached. Bye!

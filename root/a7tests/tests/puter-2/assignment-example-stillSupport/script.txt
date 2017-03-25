@@ -1,0 +1,5 @@
+how are you?
+how goes it?
+what time is it?
+what is the date?
+exit

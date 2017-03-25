@@ -1,0 +1,7 @@
+PUTER: Hello and welcome! Let's talk...
+PUTER: I am a computer program, so obviously I am excellent!
+PUTER: I am a computer program, so obviously I am excellent!
+PUTER: The current date/time is 2017-03-05 16:52:32.281851
+PUTER: The current date/time is 2017-03-05 16:52:32.282864
+PUTER: Personal info saved!
+PUTER: Bye!

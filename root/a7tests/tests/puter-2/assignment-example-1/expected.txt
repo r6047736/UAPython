@@ -1,0 +1,10 @@
+PUTER: Hello and welcome! Let's talk...
+PUTER: Huh?
+PUTER: OK, got it.
+PUTER: OK, got it.
+PUTER: Your favorite food is orange chicken.
+PUTER: Your favorite car is a 72 corvette.
+PUTER: Huh?
+PUTER: Not sure :-(
+PUTER: Personal info saved!
+PUTER: Bye!

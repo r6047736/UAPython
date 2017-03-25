@@ -2,9 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c551c9fe-4ea9-4104-bd0e-aa323f76aa8d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-bday/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-bday/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-bday/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-bday/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-date-time/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-date-time/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-date-time/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-date-time/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-exit/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-exit/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-exit/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-exit/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-fc/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-fc/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-fc/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-fc/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-hay/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-hay/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-hay/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-hay/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-limit/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-limit/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-limit/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-limit/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-unknown/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-unknown/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-unknown/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/assignment-example-unknown/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-fc/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-fc/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-fc/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-fc/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-immediate-exit/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-immediate-exit/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-immediate-exit/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-immediate-exit/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-limit/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-limit/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-limit/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-limit/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-1/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-1/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-1/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-1/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-2/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-2/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-2/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-2/script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-3/actual.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-3/command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-3/expected.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/root/a7tests/tests/puter-1/extra-text-misc-3/script.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tatt" afterPath="$PROJECT_DIR$/root/a5tests/tatt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a6tests/tatt" afterPath="$PROJECT_DIR$/root/a6tests/tatt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a7tests/tatt" afterPath="$PROJECT_DIR$/root/a7tests/tatt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/main.js" afterPath="$PROJECT_DIR$/res/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-date-time/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-date-time/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-exit/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-exit/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-limit/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-limit/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-unknown/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/assignment-example-unknown/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-fc/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-fc/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-misc-1/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-misc-1/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-misc-2/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-misc-2/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-misc-3/actual.txt" afterPath="$PROJECT_DIR$/root/a5tests/tests/puter-1/extra-text-misc-3/actual.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/a7tests/tests/test-all.sh" afterPath="$PROJECT_DIR$/root/a7tests/tests/test-all.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,11 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="156">
+              <caret line="107" column="27" lean-forward="true" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -46,18 +110,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3314">
-              <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+            <state relative-caret-position="199">
+              <caret line="245" column="21" lean-forward="false" selection-start-line="245" selection-start-column="21" selection-end-line="245" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="176" column="24" lean-forward="false" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
+            <state relative-caret-position="178">
+              <caret line="195" column="75" lean-forward="false" selection-start-line="195" selection-start-column="75" selection-end-line="195" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -66,8 +130,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -99,9 +163,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/res/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/res/main.js" />
       </list>
     </option>
   </component>
@@ -115,9 +179,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="61" />
+    <option name="x" value="258" />
+    <option name="y" value="139" />
     <option name="width" value="1172" />
-    <option name="height" value="877" />
+    <option name="height" value="563" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -134,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -163,7 +229,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,12 +337,14 @@
       <workItem from="1488568193761" duration="25608000" />
       <workItem from="1488869485334" duration="55000" />
       <workItem from="1488923889935" duration="862000" />
-      <workItem from="1489783664319" duration="17151000" />
+      <workItem from="1489783664319" duration="17859000" />
+      <workItem from="1490302760598" duration="1101000" />
+      <workItem from="1490386329819" duration="7745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88991000" />
+    <option name="totallyTimeSpent" value="98545000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,16 +356,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="61" width="1172" height="877" extended-state="0" />
-    <editor active="false" />
+    <frame x="258" y="139" width="1172" height="563" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20764552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20764552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28917196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35456476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -318,8 +385,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20764552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.355414" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20764552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -548,39 +615,39 @@
     <entry file="file://$PROJECT_DIR$/cmd_exce.js" />
     <entry file="file://$PROJECT_DIR$/user.json" />
     <entry file="file://$PROJECT_DIR$/js/server.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/upload-icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/main.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3314">
-          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="176" column="24" lean-forward="false" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
+        <state relative-caret-position="178">
+          <caret line="195" column="75" lean-forward="false" selection-start-line="195" selection-start-column="75" selection-end-line="195" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="245" column="21" lean-forward="false" selection-start-line="245" selection-start-column="21" selection-end-line="245" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="107" column="27" lean-forward="true" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
           <folding />
         </state>
       </provider>

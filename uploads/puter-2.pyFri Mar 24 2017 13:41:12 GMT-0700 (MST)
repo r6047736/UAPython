@@ -1,0 +1,46 @@
+# Author: Irene Moreno
+# Description: this script runs a simple AI named "Puter"
+
+import sys
+from datetime import datetime
+
+name = 'PUTER' #default name for AI
+print("PUTER: Hello and welcome! Let's talk...")
+while True:
+    favorites_file = open('favorites.txt', 'r+') #open favorites.txt
+    favorites_db = {}
+    for line in favorites_file: # create favorites DB to use in loop
+        sp = line.split('|')
+        topic = sp[0].strip()
+        item = sp[1].strip()
+        favorites_db[topic] = item
+    user_input = sys.stdin.readline().rstrip()
+    if (user_input == "how are you?" or user_input == "how goes it?"):
+        print(name + ": I am a computer program, so obviously I am excellent!")
+    elif (user_input == "what time is it?" or user_input == "what is the date?"):
+        print(name + ": The current date/time is " + str(datetime.now()))
+    elif (user_input[0:11] == 'my favorite'): # writes new 'favorite' to file
+        add = user_input[12:]
+        add = add.split('is')
+        topic = add[0].strip()
+        item = add[1].lstrip()
+        favorites_file.write(topic + ' | ' + item + '\n')
+        print(name + ': OK, got it.')
+    elif (user_input[0:20] == 'what is my favorite ') and (user_input[len(user_input)-1] == '?'): # read for 'favorite' from file
+        topic = user_input[20:-1]
+        if topic in favorites_db:
+            print(name + ': Your favorite ' + topic + ' is ' + favorites_db[topic] + '.')
+
+        else:
+            print(name+': Not sure :-(')
+    elif (user_input[0:18] == 'rename yourself to'):
+        name = user_input[18:].strip()
+        print(name + ': OK, name changed!')
+    elif (user_input == "exit"):
+        print(name + ': Personal info saved!')
+        print(name + ": Bye!")
+        favorites_file.close()
+        sys.exit()
+    else:
+        print(name + ": Huh?")
+    favorites_file.close()

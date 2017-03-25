@@ -1,7 +1,0 @@
-PUTER: Hello and welcome! Ask me no more than 10 questions.
-PUTER: Go ahead, ask me something:
-PUTER: I am a computer program, so obviously I am excellent!
-PUTER: Go ahead, ask me something:
-PUTER: I am a computer program, so obviously I am excellent!
-PUTER: Go ahead, ask me something:
-PUTER: Bye!

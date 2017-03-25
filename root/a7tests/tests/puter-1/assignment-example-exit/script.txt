@@ -1,4 +1,0 @@
-what time is it?
-what is your favorite color?
-how is your day going?
-exit

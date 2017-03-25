@@ -1,0 +1,3 @@
+PUTER: Hello and welcome! Let's talk...
+PUTER: Personal info saved!
+PUTER: Bye!

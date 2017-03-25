@@ -1,0 +1,18 @@
+PUTER: Hello and welcome! Let's talk...
+PUTER: OK, got it.
+rename: OK, name changed!
+Rename: OK, name changed!
+Rename: Huh?
+Rename: Huh?
+Rename: Your favorite name is Copper.
+Rename: OK, got it.
+Rename: Your favorite name is Cesar.
+Rename: Huh?
+Rename: Huh?
+Rename: Huh?
+Rename: I am a computer program, so obviously I am excellent!
+Rename: Huh?
+Rename: Huh?
+Rename: Personal info saved!
+Rename: Bye!
+

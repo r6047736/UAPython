@@ -1,7 +1,7 @@
 PUTER: Hello and welcome! Ask me no more than 10 questions.
 PUTER: Go ahead, ask me something:
-PUTER: The current date/time is 2017-03-07 15:03:46.435033
+PUTER: The current date/time is 2017-03-23 14:14:56.908531
 PUTER: Go ahead, ask me something:
-PUTER: The current date/time is 2017-03-07 15:03:46.435060
+PUTER: The current date/time is 2017-03-23 14:14:56.908566
 PUTER: Go ahead, ask me something:
 PUTER: Bye!

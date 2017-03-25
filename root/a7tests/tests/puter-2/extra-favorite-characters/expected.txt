@@ -1,0 +1,15 @@
+PUTER: Hello and welcome! Let's talk...
+PUTER: OK, got it.
+PUTER: Huh?
+PUTER: Not sure :-(
+PUTER: Your favorite * is &.
+PUTER: Not sure :-(
+PUTER: OK, got it.
+PUTER: Not sure :-(
+PUTER: Not sure :-(
+PUTER: Your favorite f1 is not F1 racing car.
+PUTER: Not sure :-(
+PUTER: Huh?
+Mystery *:.: OK, name changed!
+Mystery *:.: Personal info saved!
+Mystery *:.: Bye!

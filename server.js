@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express();
-var fs = require("fs");
+var fs = require("fs-extra");
 var exec = require('child_process').exec;
 var spawn= require('child_process').spawn;
 var multer = require('multer');
@@ -22,6 +22,12 @@ var assigns = [
     {name:"a5", id:"a5",num:"5"},
     {name:"a6", id:"a6",num:"6"},
     {name:"a7", id:"a7",num:"7"}];
+
+var assNumToassName={
+    "a5":"puter-1",
+    "a6":"hangman",
+    "a7":"puter-2"
+}
 
 
 
@@ -62,7 +68,13 @@ app.post('/upload',function(req,res){
 console.log("request")
 
 
+
+
     upload(req,res,function(err){
+        if (!req.body.num){
+            return res.end("No assignment number selected")
+        }
+
         if (err){
             console.log(err);
             return res.end("error uploading file")
@@ -81,8 +93,9 @@ console.log("request")
             //res.send("No file uploaded")
             return;
         }
-console.log(req.body)
+    console.log(req.body)
         movefile(req.file.path,dir+"/"+ req.file.originalname);
+
 
 
 
@@ -107,7 +120,7 @@ app.get('/getfiles',function(req,res){
             console.log(err);
 
         }
-        console.log(items)
+       // console.log(items)
         res.send(items);
 
 
@@ -135,14 +148,27 @@ app.get('/test/',function(req,res){
     var asId = req.query.assigNum;
     var studentworkingDir = req.query.currentDir ;
     var assignmentworkingDir;
+    console.log("checking the tests directory...exist?")
 
-    console.log(req.query);
+    //check the current student directory exist "tests" folder? If not copy from
+    if (!fs.existsSync("root/"+asId+"tests/uploads/"+studentworkingDir+"/tests")){
+        console.log("directory does not existed");
+        //create dir first, other wise throws error
+        fs.mkdirSync("root/"+asId+"tests/uploads/"+studentworkingDir+"/tests");
+        // COPY TESTS FOLDER TO STUDENT WORK DIR
+        fs.copySync("root/"+asId+"tests/tests", "root/"+asId+"tests/uploads/"+studentworkingDir+"/tests");
+    }
+    else{
+        console.log("dir existed , skip")
+    }
+
+    console.log("finish checking")
 
     var re ="";
 
-    deploySh  =spawn("bash",['test-all.sh','../tatt/','../uploads/'+studentworkingDir],{
-        cwd: BASEDIR +'/root/'+asId+'tests/tests'
-    })
+    var deploySh  = spawn("bash",['test-all.sh','../../../tatt/','../'],{
+        cwd: BASEDIR +'/root/'+asId+'tests/uploads/'+studentworkingDir+'/tests'
+    });
 
 
     deploySh.stdout.on('data', function(data){
@@ -162,12 +188,12 @@ app.get('/test/',function(req,res){
 
     });
 
-
+    deploySh.on('error', function( err ){ console.log(err)  })
 
 })
 
 
-var server = app.listen(8081,'localhost', function () {
+var server = app.listen(process.env.PORT || 8081,'localhost', function () {
 
     var host = server.address().address
     var port = server.address().port
