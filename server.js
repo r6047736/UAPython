@@ -2,6 +2,7 @@ var express = require('express');
 
 var app = express();
 var fs = require("fs-extra");
+var Promise = require('bluebird');
 var exec = require('child_process').exec;
 var spawn= require('child_process').spawn;
 var multer = require('multer');
@@ -191,6 +192,154 @@ app.get('/test/',function(req,res){
     deploySh.on('error', function( err ){ console.log(err)  })
 
 })
+
+
+
+
+app.get("/single_test",function(){
+    var assignId = req.query.id;
+    var studentWrokingDir = req.query.dir;
+    var assignmentDir = assNumToassName[assignId];
+    var testName =  req.query.testname;
+
+
+    dir  = "root/"+assignId+"tests/uploads/"+studentWrokingDir+"/tests/"+assignmentDir;
+
+    var result = []
+
+
+});
+
+
+
+app.get("/tests_names/",function(req,res){
+
+            var assignId = req.query.id;
+            var studentWrokingDir = req.query.dir;
+            var assignmentDir = assNumToassName[assignId];
+            console.log("get all of diff files ",assignId ,",",studentWrokingDir,",",assignmentDir )
+            dir  = "root/"+assignId+"tests/uploads/"+studentWrokingDir+"/tests/"+assignmentDir;
+
+            var testsnames = readAllfolders( dir)
+
+            //res.send(testsnames);
+
+            var result = [];
+
+
+
+
+            var promises = [];
+
+            for ( var i in testsnames){
+                var a = {
+                    name:testsnames[i],
+                    actual:'',
+                    expected:''
+                }
+                result.push(a);
+                var name = a.name;
+
+                var p1 =
+                    new Promise(function(resolve,reject){
+
+
+                        var test_name = name;  // save to a new variable, cus name is changing
+                        var test_index = i;
+                        fs.readFile(dir + "/" + test_name+"/actual.txt","utf-8", function(err, data){
+
+
+
+                            if (err)
+                                reject(err);
+                            else
+                            {
+                                //addActualOutput(result,test_name,"actual",data );
+                                result[test_index].actual = data;
+                                resolve(data);
+                            }
+
+                        });
+                    })
+
+                var p2 = new Promise(function(resolve,reject){
+
+                    var test_name2 =  name;    // save to a new variable, cus name is changing
+                    var test_index2 = i;
+                    fs.readFile(dir + "/" + test_name2+"/expected.txt","utf-8", function(err, data){
+
+                        if (err)
+                            reject(err);
+                        else
+                        {
+                            //addActualOutput(result,test_name2,"expected",data );
+                            result[test_index2].expected = data;
+                            resolve(data);
+                        }
+
+                    });
+                })
+
+                promises.push(p1)
+                promises.push(p2)
+
+
+
+
+
+            }
+
+    Promise.all(promises).then(function(data){
+            res.send(result);
+        }
+
+
+    )
+
+
+
+
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+readAllfolders = function(dir){
+    var f = [];
+    files = fs.readdirSync(dir);
+
+    files.forEach(function(folder){
+        if (fs.statSync(dir+'/'+folder).isDirectory()){
+            console.log(folder)
+            f.push(folder);
+        }
+
+
+app.get("/diff/",function(req,res) {
+
+    var assignId = req.query.id;
+    var studentWrokingDir = req.query.dir;
+    var assignmentDir = assNumToassName[assignId];
+
+})
+
+
+
+
+
+
+    })
+    return f;
+}
 
 
 var server = app.listen(process.env.PORT || 8081,'localhost', function () {
