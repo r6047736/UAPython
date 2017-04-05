@@ -15,6 +15,7 @@ angular.module('UAPython', [])
         $scope.assigmentList =[];
         $scope.assignId = "";
         $scope.currentUploadedFiles = [];
+        $scope.diffresult =[];
 
 
             $scope.relativepath = $window.currentPath;
@@ -43,11 +44,6 @@ angular.module('UAPython', [])
 
 
 
-
-
-
-
-
         $scope.readdir=function(){
 
             $.get(SERVER+'/getfiles', { studentDir:  $scope.randomDirectory ,assigId:  $scope.assignId.id  },function(data){
@@ -59,13 +55,14 @@ angular.module('UAPython', [])
             )
         }
 
-        $scope.diff=function(){
+        $scope.diff = function(){
 
             $.get(SERVER+'/tests_names', { dir:  $scope.randomDirectory ,id:  $scope.assignId.id  },function(data){
-
                     console.log(data);
-                    alert(data);
+                    $scope.diffresult = data ;
                     $scope.$apply();
+                    //The code to anylisis the current test
+
                 }
             )
         }

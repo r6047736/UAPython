@@ -196,19 +196,7 @@ app.get('/test/',function(req,res){
 
 
 
-app.get("/single_test",function(){
-    var assignId = req.query.id;
-    var studentWrokingDir = req.query.dir;
-    var assignmentDir = assNumToassName[assignId];
-    var testName =  req.query.testname;
 
-
-    dir  = "root/"+assignId+"tests/uploads/"+studentWrokingDir+"/tests/"+assignmentDir;
-
-    var result = []
-
-
-});
 
 
 
@@ -217,8 +205,13 @@ app.get("/tests_names/",function(req,res){
             var assignId = req.query.id;
             var studentWrokingDir = req.query.dir;
             var assignmentDir = assNumToassName[assignId];
-            console.log("get all of diff files ",assignId ,",",studentWrokingDir,",",assignmentDir )
+
+            if (!assignId || !studentWrokingDir || !assignmentDir)
+                return;
+
+           // console.log("get all of diff files ",assignId ,",",studentWrokingDir,",",assignmentDir )
             dir  = "root/"+assignId+"tests/uploads/"+studentWrokingDir+"/tests/"+assignmentDir;
+
 
             var testsnames = readAllfolders( dir)
 
@@ -322,21 +315,6 @@ readAllfolders = function(dir){
             console.log(folder)
             f.push(folder);
         }
-
-
-app.get("/diff/",function(req,res) {
-
-    var assignId = req.query.id;
-    var studentWrokingDir = req.query.dir;
-    var assignmentDir = assNumToassName[assignId];
-
-})
-
-
-
-
-
-
     })
     return f;
 }
@@ -344,8 +322,8 @@ app.get("/diff/",function(req,res) {
 
 var server = app.listen(process.env.PORT || 8081,'localhost', function () {
 
-    var host = server.address().address
-    var port = server.address().port
+    var host = server.address().address;
+    var port = server.address().port;
 
     console.log("Example app listening at http://%s:%s", host, port)
 
